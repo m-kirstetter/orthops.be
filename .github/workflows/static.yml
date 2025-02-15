@@ -27,6 +27,8 @@ jobs:
     environment:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
+    env:
+      GMAPS_API_KEY: ${{ secrets.GMAPS_API_KEY }}
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
