@@ -2689,7 +2689,7 @@
 	  var google = null;
 	  var $maps;
 	  var namespace = '.w-widget-map';
-	  var apiKey = 'AIzaSyCK8M99_UUt0z3-EjoePTC1rME7Ocs-de0';
+	  var apiKey = process.env.GMAPS_API_KEY;
 
 	  // -----------------------------------
 	  // Module methods
